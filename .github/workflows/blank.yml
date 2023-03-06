@@ -35,4 +35,4 @@ jobs:
           cat << EOF >dtc
           ${{secrets.dtc_vk}}
           EOF
-          cat dtc
+          cat dtc | tr '[:lower:]' '[:upper:]'
